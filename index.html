@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <title>Novo usuario - Sujeito Programador</title>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="header">
+            <h2>Nova Conta </h2>
+        </section>
+
+        <form id="form" class="form">
+            <div class="form-content">
+               <label for="username">Nome do usuario</label>
+               <input
+                type="text"
+                id="username"
+                placeholder="Digite o nome do usuario..."
+                />
+                <a class="error-message" id="username-error">Aqui vai a mensagem de erro...</a>
+                <button class="edit-button" onclick="editField('username')">Editar</button>
+                <button class="delete-button" data-field="username">Excluir</button>
+            </div>    
+
+            <div class="form-content">
+                <label for="movie">Nome do filme</label>
+                <input
+                 type="text"
+                 id="movie"
+                 placeholder="Digite o nome do seu filme favorito..."
+                 />
+                 <a class="movie-message" id="movie-error">Aqui vai a mensagem de erro...</a>
+                 <button class="edit-button" onclick="editField('movie')">Editar</button>
+                 <button class="delete-button" data-field="movie">Excluir</button>
+             </div>   
+
+             <div class="form-content">
+                <label for="character">Nome do personagem</label>
+                <input
+                 type="text"
+                 id="character"
+                 placeholder="Digite o nome do seu personagem favorito..."
+                 />
+                 <a class="error-message" id="character-error">Aqui vai a mensagem de erro...</a>
+                 <button class="edit-button" onclick="editField('character')">Editar</button>
+                 <button class="delete-button" data-field="character">Excluir</button>
+             </div>   
+
+             <div class="form-content">
+                <label for="gender">Gênero do filme</label>
+                <input
+                 type="text"
+                 id="gender"
+                 placeholder="Digite o gênero do filme..."
+                 />
+                 <a class="error-message" id="gender-error">Aqui vai a mensagem de erro...</a>
+                 <button class="edit-button" onclick="editField('gender')">Editar</button>
+                 <button class="delete-button" data-field="gender">Excluir</button>
+             </div>  
+             
+             <div class="form-content">
+                <label for="date">Data de lançamento</label>
+                <input
+                 type="date"
+                 id="date"
+                 placeholder="Digite a data de lançamento..."
+                 />
+                 <a class="error-message" id="date-error">Aqui vai a mensagem de erro...</a>
+                 <button class="edit-button" onclick="editField('date')">Editar</button>
+                 <button class="delete-button" data-field="date">Excluir</button>
+             </div>
+
+             <button type="submit">Cadastrar</button>
+
+        </form>
+
+    </div>
+  
+
+    <script src="./script.js"></script>
+</body>
+</html>
